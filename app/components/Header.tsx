@@ -10,7 +10,7 @@ export default function Header() {
         <header className="Header">
         
             <div className='CISD_LOGO'>
-                <a href='/homes'>
+                <a href='/home'>
                     <img src="/CISD_logo.png" alt="CISD" className='CISD_LOGO_img' />
                 </a>
             </div>  
@@ -34,7 +34,7 @@ export default function Header() {
                         </ul>
                     </li>
                     <li><a href="#">联系我们</a></li>
-                    <li><a href="#">会员登入</a></li>
+                    <li><a href="/login">会员登入</a></li>
                 </ul>
                 
             </nav>

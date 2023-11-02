@@ -10,7 +10,7 @@
     align-items: center;
     background-color: transparent;
     padding: 14px 20px;
-    z-index: 1;
+    z-index: 10;
 }
     
     /* LOGO DONE */
@@ -57,7 +57,7 @@
         font-size: 18px;
         text-decoration: none;
         color: white;
-
+        font-weight: 400;
     }
 
     .Navigation a:hover {

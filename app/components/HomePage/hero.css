@@ -1,25 +1,81 @@
 .Hero {
     display: flex;
-    height: auto; 
-    margin-top: 0px;
+    height: calc(100vw * (3837 / 5755)); 
+    width: 100%;
     align-items: center;
+    justify-content: center;
+    background-image: url('/CISD-BG.jpg');
+    background-size: cover;
+    background-position: center center; 
 }
 
-.background {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-    align-items: center;}
-
-.background::before {
+.Hero::before {
     content: "";
+    height: calc(100vw * (3837 / 5755)); 
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.1); /* 白色背景，50% 透明度 */
+    background: rgba(255, 255, 255, 0.15); /* white filter */
     z-index: 1;
+}
+
+.hero_container {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    height: 60%;
+    width: 90%;
+    padding: 30px 50px;
+    background-color: white;
+}
+
+.text_container {
+    width: 34%;
+    height: 100%;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 300;
+    
+    background-color: blueviolet;
+    text-shadow: 
+        -3px -3px 5px rgba(0, 0, 0, 0.15),
+        -3px 3px 5px rgba(0, 0, 0, 0.15),
+        3px -3px 5px rgba(0, 0, 0, 0.15),
+        3px 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+.text_name_en {
+    padding: 0px 10px;
+    font-size: 90px;
+    color: white;
+    text-align: center;
+    white-space: nowrap;    /* 防止文本换行 */
+    letter-spacing: 1px;    /* 字符间距 */
+    
+}
+.text_name_ch {
+    padding: 0px 10px;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 6px;    
+}   
+.text_about_paragraph {
+    padding: 10px 10px;
+    margin-top: 50px;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    align-items: center;
+    line-height: 2;
+
+}
+
+.image_carousel_container {
+    height: auto;
 }

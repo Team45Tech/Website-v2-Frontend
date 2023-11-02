@@ -1,6 +1,5 @@
 // Home Page
 
-
 import React from 'react'
 import Head from 'next/head';
 
@@ -9,9 +8,7 @@ import Head from 'next/head';
 import Header from '../app/components/Header'
 
 import Hero from '../app/components/HomePage/Hero'
-// import Hero from '../app/components/Home/Hero/Hero'
-// import Event from '../app/components/Home/Event/Event'
-// import About from '../app/components/Home/About/about'
+
 
 
 const Page = () => {

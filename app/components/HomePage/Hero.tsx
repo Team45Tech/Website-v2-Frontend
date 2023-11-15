@@ -3,7 +3,7 @@
 import React, { useRef, useState, Component } from 'react';
 import './hero.css'
 import ReactDOM from 'react-dom';
-import { CSSTransitionGroup } from 'react-transition-group';
+import { TransitionGroup } from 'react-transition-group';
 
 interface CarouselProps {
     items: string[]; // 修改为字符串数组
@@ -46,13 +46,21 @@ class Carousel extends Component<CarouselProps, CarouselState> {
           }
           const level = i - this.state.active;
           items.push(
+            // <Item
+            //   key={index}
+            //   image={this.state.items[index]}
+            //   level={level}
+            //   onClickLeft={this.moveLeft.bind(this)} // 传递 moveLeft 方法
+            //   onClickRight={this.moveRight.bind(this)} // 传递 moveRight 方法
+            // />
             <Item
-              key={index}
-              image={this.state.items[index]}
-              level={level}
-              onClickLeft={this.moveLeft.bind(this)} // 传递 moveLeft 方法
-              onClickRight={this.moveRight.bind(this)} // 传递 moveRight 方法
-            />
+        key={index}
+        image={this.state.items[index]}
+        level={level}
+        onClick={() => {/* Add your onClick logic here */}}
+        onClickLeft={this.moveLeft.bind(this)}
+        onClickRight={this.moveRight.bind(this)}
+      />
           );
         }
         return items;

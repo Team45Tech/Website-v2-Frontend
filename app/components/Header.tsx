@@ -11,7 +11,7 @@ export default function Header() {
         
             <div className='CISD_LOGO'>
                 <a href='/home'>
-                    <img src="/CISD_logo.png" alt="CISD" className='CISD_LOGO_img' />
+                    <img src="/CISD_logo_trans.jpg" alt="CISD" className='CISD_LOGO_img' />
                 </a>
             </div>  
             
@@ -21,7 +21,14 @@ export default function Header() {
                 <ul>
 
                     <li><a href="/home">主页</a></li>
-                    <li><a href="#">活动回顾</a></li>
+                    <li className="dropdown">
+                        <a href="#">活动资讯</a>
+                        <ul className="dropdown-menu">
+                            <li><a href="/event_preview">活动前瞻</a></li>
+                            <li><a href="/event_review">活动回顾</a></li>
+                            <li><a href="/volunteer">志愿者报名</a></li>
+                        </ul>
+                    </li>
                     
                     <li className="dropdown">
                         <a href="#">部门简介</a>

@@ -1,7 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Tenor+Sans&display=swap');
+
 .Hero {
     display: flex;
     height: 100vh; 
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     align-items: center;
     justify-content: center;
     background-image: url('/CISD-BG.jpg');
@@ -57,8 +65,9 @@
     color: white;
     text-align: center;
     white-space: nowrap;    /* 防止文本换行 */
-    letter-spacing: 1px;    /* 字符间距 */
-    
+    letter-spacing: 0px;    /* 字符间距 */
+    font-family: 'Tenor Sans', sans-serif; 
+    transform: scale(1,1.18)   
 }
 .text_name_ch {
     padding: 0px 10px;

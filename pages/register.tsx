@@ -12,7 +12,7 @@ const Page: React.FC = () => {
         
         <div>
             <Head>
-                <title>UACISD - Registrition</title>
+                <title>UACISD - Sign up</title>
             </Head>
             
             <Header/>

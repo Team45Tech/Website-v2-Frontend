@@ -24,9 +24,9 @@ export default function Header() {
                     <li className="dropdown">
                         <a href="#">活动资讯</a>
                         <ul className="dropdown-menu">
-                            <li><a href="/event_preview">活动前瞻</a></li>
+                            <li><a href="https://mp.weixin.qq.com/s/g6ux9EAWgh6Qyc6_ZC-aQw">活动前瞻</a></li>
                             <li><a href="/event_review">活动回顾</a></li>
-                            <li><a href="/volunteer">志愿者报名</a></li>
+                            <li><a href="#">志愿者报名</a></li>
                         </ul>
                     </li>
                     

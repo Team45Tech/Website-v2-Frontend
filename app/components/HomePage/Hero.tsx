@@ -46,13 +46,7 @@ class Carousel extends Component<CarouselProps, CarouselState> {
           }
           const level = i - this.state.active;
           items.push(
-            // <Item
-            //   key={index}
-            //   image={this.state.items[index]}
-            //   level={level}
-            //   onClickLeft={this.moveLeft.bind(this)} // 传递 moveLeft 方法
-            //   onClickRight={this.moveRight.bind(this)} // 传递 moveRight 方法
-            // />
+           
             <Item
         key={index}
         image={this.state.items[index]}

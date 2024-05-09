@@ -1,15 +1,11 @@
-// Home Page
+// Contact Page
 
 import React from 'react'
 import Head from 'next/head';
 
-
 // COMPONENET PAGE IMPORTING 
 import Header from '../app/components/Header'
-
-import Hero from '../app/components/HomePage/Hero'
-
-
+import Contact from '../app/components/ContactPage/Contact'
 
 const Page = () => {
     return (
@@ -21,7 +17,7 @@ const Page = () => {
             <Header/>
 
             {/* Components in page*/}
-            <Hero/>
+            <Contact/>
 
         </div>
     )

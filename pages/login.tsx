@@ -16,7 +16,8 @@ const Page: React.FC = () => {
             </Head>
             
             <Header/>
-            <Login />
+            <Login/>
+            
         </div>
     );
 }

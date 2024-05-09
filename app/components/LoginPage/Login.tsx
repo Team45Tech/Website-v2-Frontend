@@ -22,34 +22,36 @@ const LoginPage: React.FC = () => {
     };
 
     return (
-        <div className="login-container">
-            
-            <form onSubmit={handleSubmit}>
-                <div className="input-group">
-                    <label htmlFor="username">Username:</label>
-                    <input 
-                        type="text" 
-                        id="username" 
-                        value={username} 
-                        onChange={(e) => setUsername(e.target.value)} 
-                        required 
-                    />
-                </div>
-                <div className="input-group">
-                    <label htmlFor="password">Password:</label>
-                    <input 
-                        type="password" 
-                        id="password" 
-                        value={password} 
-                        onChange={(e) => setPassword(e.target.value)} 
-                        required 
-                    />
-                </div>
-                <div className="submit-group">
-                    <button type="submit">Login</button>
-                    <button onClick={handleButtonClick}>Sign Up</button>;
-                </div>
-            </form>
+        <div className='Login'>
+            <div className="login-container">
+                
+                <form onSubmit={handleSubmit}>
+                    <div className="input-group">
+                        <label htmlFor="username">Username:</label>
+                        <input 
+                            type="text" 
+                            id="username" 
+                            value={username} 
+                            onChange={(e) => setUsername(e.target.value)} 
+                            required 
+                        />
+                    </div>
+                    <div className="input-group">
+                        <label htmlFor="password">Password:</label>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            value={password} 
+                            onChange={(e) => setPassword(e.target.value)} 
+                            required 
+                        />
+                    </div>
+                    <div className="submit-group">
+                        <button type="submit">Login</button>
+                        <button onClick={handleButtonClick}>Sign Up</button>;
+                    </div>
+                </form>
+            </div>
         </div>
     );
 };

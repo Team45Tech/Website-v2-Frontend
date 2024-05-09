@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import './hero.css'
 import ReactDOM from 'react-dom';
-import { TransitionGroup } from 'react-transition-group';
+
 
 interface CarouselProps {
     items: string[]; // 修改为字符串数组
@@ -21,10 +21,9 @@ interface ItemProps {
     level: number;
     onClickLeft?: () => void; // 可选的左侧项点击回调
     onClickRight?: () => void; // 可选的右侧项点击回调
-  }
+}
   
   
-
 class Carousel extends Component<CarouselProps, CarouselState> {
     constructor(props: CarouselProps) {
         super(props);
@@ -46,13 +45,7 @@ class Carousel extends Component<CarouselProps, CarouselState> {
           }
           const level = i - this.state.active;
           items.push(
-            // <Item
-            //   key={index}
-            //   image={this.state.items[index]}
-            //   level={level}
-            //   onClickLeft={this.moveLeft.bind(this)} // 传递 moveLeft 方法
-            //   onClickRight={this.moveRight.bind(this)} // 传递 moveRight 方法
-            // />
+           
             <Item
         key={index}
         image={this.state.items[index]}
@@ -108,24 +101,24 @@ interface ItemProps {
 
 class Item extends Component<ItemProps> {
     render() {
-      const className = `item level${this.props.level}`;
-      const isLeftItem = this.props.level < 0;
-      const isRightItem = this.props.level > 0;
-  
-      return (
-        <div
-          className={className}
-          onClick={() => {
-            if (isLeftItem && this.props.onClickLeft) {
-              this.props.onClickLeft();
-            } else if (isRightItem && this.props.onClickRight) {
-              this.props.onClickRight();
-            }
-          }}
-        >
-          <img src={this.props.image} alt={`Image`} />
-        </div>
-      );
+        const className = `item level${this.props.level}`;
+        const isLeftItem = this.props.level < 0;
+        const isRightItem = this.props.level > 0;
+    
+        return (
+            <div
+                className={className}
+                onClick={() => {
+                  if (isLeftItem && this.props.onClickLeft) {
+                    this.props.onClickLeft();
+                  } else if (isRightItem && this.props.onClickRight) {
+                    this.props.onClickRight();
+                  }
+                }}
+            >
+                <img src={this.props.image} alt={`Image`} />
+            </div>
+        );
     }
   }
   

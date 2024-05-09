@@ -7,6 +7,22 @@ body {
     background-color: #f7f7f7;
 }
 
+.Login {
+    display: flex;
+    height: 100vh; 
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/CISD-BG.jpg');
+    background-size: cover;
+    background-position: center center; 
+}
+
 .login-container {
     width: 300px;
     padding: 20px;
@@ -14,8 +30,6 @@ body {
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-
-
 
 .input-group {
     margin-bottom: 20px;

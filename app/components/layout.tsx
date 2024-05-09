@@ -12,11 +12,11 @@ const inter = Inter({ subsets: ['latin'] })
 // }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <div className={inter.className}>
-      {children}
-      {/* If you need the div with id "root", you can keep it, but it's unusual for typical Next.js apps */}
-      {/* <div id="root"></div> */}
-    </div>
-  )
+    return (
+        <div className={inter.className}>
+            {children}
+            {/* If you need the div with id "root", you can keep it, but it's unusual for typical Next.js apps */}
+            {/* <div id="root"></div> */}
+        </div>
+    )
 }
